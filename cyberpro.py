@@ -120,7 +120,7 @@ def uaku2():
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/Taybul1/X101/blob/main/X101').text
+		a=requests.get('https://github.com/MRMIDO770/X101/blob/main/X101').text
 		ua=open('.ua2.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -130,7 +130,7 @@ def uaku2():
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "→".join(uuid)
-  server = requests.get('https://github.com/Taybul1/X101/blob/main/X101t').text
+  server = requests.get('https://github.com/MRMIDO770/X101/blob/main/X101t').text
   
  
 
@@ -169,12 +169,10 @@ def menu_apikey():
   print(f"")
   print(f"\033[1;31m   COPY YOUR KEW SEND TO ADMIN  ");time.sleep(0.1)
   print(f"")
-  print(f"  FOLLOW ADMIN ID,,,,,,,,,,,,,,,,,    ");time.sleep(1)
-  os.system(f'xdg-open https://m.facebook.com/groups/151296501309001/?ref=share&mibextid=NSMWB')
   print(f"");time.sleep(2)
   print(f"\x1b[0;34m  CHAKING APPROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.get("https://github.com/Taybul1/X101/blob/main/X101").text
+    httpCaht = requests.get("https://github.com/MRMIDO770/X101/blob/main/X101").text
     if id in httpCaht:
       print("\033[1;92m   KEY APPROVED");time.sleep(2)
       msg = str(os.geteuid())
@@ -184,7 +182,7 @@ def menu_apikey():
       
       print(f"\x1b[1;92m    Sorry Bro Your Key not Aproved ")
       print(f"    SEND PYMENT TO APPROVAL"); time.sleep(2)
-      os.system(f'xdg-open https://wa.me/+8801747130005?text='+id)
+      os.system(f'xdg-open https://wa.me/+201067013573?text='+id)
       time.sleep(2)
       sys.exit()
   except:

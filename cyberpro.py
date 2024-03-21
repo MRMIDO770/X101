@@ -163,27 +163,27 @@ def menu_apikey():
   print(f"")
   print(f" \033[1;32m  CONTACT ADMIN TO BUY TOOL\033[1;37m\n")
   print(f"")
-  print(f"\x1b[1;92m   CONTAT ADMIN TO BUY TOOLS ");time.sleep (0.1) 
+  print(f"\x1b[1;92m   CONTAT ADMIN TO BUY TOOLS ");time.sleep (0.01) 
   print(f"")
   print(f"\033[1;32     YOUR KEY : "+id)
   print(f"")
-  print(f"\033[1;31m   COPY YOUR KEW SEND TO ADMIN  ");time.sleep(0.1)
+  print(f"\033[1;31m   COPY YOUR KEW SEND TO ADMIN  ");time.sleep(0.01)
   print(f"")
-  print(f"");time.sleep(2)
-  print(f"\x1b[0;34m  CHAKING APPROVAL.............                                                ");time.sleep (0.5)
+  print(f"");time.sleep(0.01)
+  print(f"\x1b[0;34m  CHAKING APPROVAL.............                                                ");time.sleep (0.01)
   try:
     httpCaht = requests.get("https://github.com/MRMIDO770/X101/blob/main/X101").text
     if id in httpCaht:
-      print("\033[1;92m   KEY APPROVED");time.sleep(2)
+      print("\033[1;92m   KEY APPROVED");time.sleep(0.01)
       msg = str(os.geteuid())
-      time.sleep(0.5)
+      time.sleep(0.05)
       pass
     else:
       
       print(f"\x1b[1;92m    Sorry Bro Your Key not Aproved ")
-      print(f"    SEND PYMENT TO APPROVAL"); time.sleep(2)
+      print(f"    SEND PYMENT TO APPROVAL"); time.sleep(0.02)
       os.system(f'xdg-open https://wa.me/+201067013573?text='+id)
-      time.sleep(2)
+      time.sleep(0.02)
       sys.exit()
   except:
     sys.exit()
@@ -220,7 +220,7 @@ def Menu():
 	if lc =='1':
 		method1()
 	else:
-		print('\n\033[1;92mChoice Vaild Option');time.sleep(1)
+		print('\n\033[1;92mChoice Vaild Option');time.sleep(0.01)
 		Menu()
 
 def method1():
